@@ -7,37 +7,57 @@
   box-sizing: border-box;
 }
 
-header{
-    color: Black;
-    background: white;
-    background-image: url('../../images/header.jpg');
-    height: 80vh;
-    max-height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: contain; /* Resize the background image to cover the entire container */
-}
-  
-header h1{
-    font-size: 3rem;
-    margin: 0 0 1rem;
-}
-
-header h2{
-    font-weight: 300;
-    font-size: 1.5rem;
-    margin: 0 0 1rem;
+header {
+  color: Black;
+  background: white;
+  /* background-image: url('../../images/header.jpeg'); */
+  background-image: url('https://latifehayson.com/wp-content/uploads/2020/07/real-estate-bitcoin.jpg');
+  height: 80vh;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: contain;
+  /* Resize the background image to cover the entire container */
 }
 
-header a{
-    color: #ffff;
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
+
+header h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+header a {
+  color: #ffff;
 }
 
 .action {
@@ -55,7 +75,8 @@ header a{
 
 @media (min-width: 48em) {
   header {
-    background-image: url('../../images/header.jpg');
+    /* background-image: url('../../images/header.jpg'); */
+    background-image: url('https://latifehayson.com/wp-content/uploads/2020/07/real-estate-bitcoin.jpg');
     background-size: cover;
     height: 90vh;
   }
